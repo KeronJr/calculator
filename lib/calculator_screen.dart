@@ -144,7 +144,7 @@ class CalculatorScreenstate extends State<CalculatorScreen> {
     }
 
     setState(() {
-      number1 = result.toStringAsPrecision(3);
+      number1 = result.toString();
 
       if (number1.endsWith(".0")) {
         number1 = number1.substring(0, number1.length - 2);
